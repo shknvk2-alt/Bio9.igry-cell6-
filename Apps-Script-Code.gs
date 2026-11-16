@@ -1,4 +1,4 @@
-function doPost(e) {
+function doGet(e) {
   const params = (e && e.parameter) || {};
   const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
 
@@ -45,6 +45,6 @@ function doPost(e) {
   return ContentService.createTextOutput('OK');
 }
 
-function doGet(e) {
-  return doPost(e);
+function doPost(e) {
+  return doGet(e);
 }
