@@ -215,6 +215,7 @@ function attempt(orgId,blk){
        instruction.textContent='Усі три раунди пройдено!';
        winEl.textContent='🏆 Вітаємо! Ти успішно завершив(ла) всі 3 раунди: зображення, функції та будова клітинних структур.';
        winEl.className='win show';
+       sendGameResult("hra_klityna_3_raundy (1)", matched, ORG.length, "100%", 0, "Пройдено");
      }
    }
  }else{
