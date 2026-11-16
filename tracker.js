@@ -1,4 +1,4 @@
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/library/d/1k_BZbHGwhaKQejNTWn3Q_BZsrgvG4R1M53onsft-ank5dwa4OJ6lLfyb/3';
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw7Rtp4l6wL_El-gR263MLrNfABY4eofkw-40SPu2R9DAR2JrZDwyt7jmJo-LZ0fVT5Xg/exec';
 const MENU_URL = 'index.html';
 
 (function () {
