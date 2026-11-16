@@ -175,6 +175,15 @@ function attempt(orgId,blk){
    fill.style.width=(matched/ORG.length*100)+'%';
    if(matched===ORG.length)winEl.className='win show';
   sendGameResult("budova-i-funktsii-kiltyny-hra (1)", score, maxScore, accuracyPercent, durationSec, detailsText);
+   function goBackToMenu() {
+  // Якщо у вас головна функція вибору називається інакше, змініть 'intro' на вашу
+  if (typeof intro === 'function') {
+    S = { r: 0, pts: 0, st: [] }; // скидаємо стан гри, якщо треба
+    intro();
+  } else {
+    window.location.href = 'index.html'; // або посилання на головну сторінку з усіма іграми
+  }
+}
  }else{
    blk.classList.add('shake');
    var chip2=board.querySelector('.chip[data-org="'+orgId+'"]');
