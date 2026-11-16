@@ -1,4 +1,4 @@
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzawW9ThsAx6xKv2GZ1s76kfGUNl_T6NFT0D-1fvk5uHLxKdlZ-_1Mwex2DEoek2lX9NA/exec";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw7Rtp4l6wL_El-gR263MLrNfABY4eofkw-40SPu2R9DAR2JrZDwyt7jmJo-LZ0fVT5Xg/exec";
 
 function sendGameResult(gameName, score, status) {
     // Автоматично беремо ім'я, яке гравець ввів на головній сторінці
