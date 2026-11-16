@@ -1,12 +1,8 @@
 function doPost(e) {
-  var params = (e && e.parameter) || {};
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
-  if (!sheet) {
-    throw new Error('Підключіть Apps Script до Google Таблиці');
-  }
+  const params = e && e.parameter ? e.parameter : {};
+  const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
 
-  var isEmpty = sheet.getLastRow() === 0;
-  if (isEmpty) {
+  if (sheet.getLastRow() === 0) {
     sheet.appendRow([
       'Час',
       'Учень',
