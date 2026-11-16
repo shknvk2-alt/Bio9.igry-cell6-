@@ -173,6 +173,7 @@ function attempt(orgId,blk){
    matched++;scoreEl.textContent=matched+' / '+ORG.length;
    fill.style.width=(matched/ORG.length*100)+'%';
    if(matched===ORG.length)winEl.className='win show';
+  sendGameResult("budova-i-funktsii-kiltyny-hra (1)", score, maxScore, accuracyPercent, durationSec, detailsText);
  }else{
    blk.classList.add('shake');
    var chip2=board.querySelector('.chip[data-org="'+orgId+'"]');
